@@ -9,7 +9,7 @@ st.set_page_config(
 st.title("🧬 Cancer Prediction System")
 st.write("Enter patient details to get prediction results")
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://mu-deployment.onrender.com/predict"
 
 with st.form("patient_form"):
     age = st.number_input("Age", min_value=1, max_value=120, step=1)
@@ -46,14 +46,14 @@ with st.form("patient_form"):
 
     bmi = st.number_input(
         "BMI",
-        min_value=10.0,
+        min_value=11.0,
         max_value=50.0,
-        step=0.1
+        step=1.0
     )
 
     cholesterol_level = st.number_input(
         "Cholesterol Level",
-        min_value=50.0,
+        min_value=51.0,
         max_value=300.0,
         step=1.0
     )
