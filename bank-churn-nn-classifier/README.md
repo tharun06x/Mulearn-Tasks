@@ -64,7 +64,7 @@ After converting logits to probabilities using:
 
 ```python
 probs = torch.sigmoid(logits)
-preds = (probs > 0.5).float()
+y_preds = (probs > 0.5).float()
 ```
 
 The following metrics are computed:
